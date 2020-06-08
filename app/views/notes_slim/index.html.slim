@@ -1,0 +1,30 @@
+css:
+  h2 {
+      text-align: center;
+  }
+
+  table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+h2 List of Notes
+table
+  thead
+    tr
+      th Title
+      th Description
+      th Tasks
+
+  tbody
+    = render partial: 'notes_haml/note', collection: @notes

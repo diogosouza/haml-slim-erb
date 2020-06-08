@@ -1,0 +1,14 @@
+
+<tr>
+  <td>
+    <span><%= note.title %></span>
+  </td>
+  <td>
+    <span><%= note.description %></span>
+  </td>
+  <td>
+    <ul>
+      <%= render partial: 'notes_erb/task', collection: note.tasks %>
+    </ul>
+  </td>
+</tr>

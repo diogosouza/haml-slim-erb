@@ -1,0 +1,10 @@
+%tr
+  %td
+    %span= note.title
+  
+  %td
+    %span= note.description
+  
+  %td
+    %ul
+      = render partial: 'notes_haml/task', collection: note.tasks

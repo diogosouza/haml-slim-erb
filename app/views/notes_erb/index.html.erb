@@ -1,0 +1,33 @@
+<style>
+h2 {
+    text-align: center;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+
+th, td {
+  padding: 15px;
+}
+</style>
+<h2>List of Notes</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Tasks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= render partial: 'notes_erb/note', collection: @notes %>
+    </tbody>
+</table>
