@@ -1,24 +1,20 @@
-# README
+This project is a simple Rails CRUD app that lists a couple of notes from a fake online API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To execute it, first install the dependencies:
 
-Things you may want to cover:
+```
+bundle install
+```
 
-* Ruby version
+Then, start the project via `rails s` command.
 
-* System dependencies
+To stress the views, you'll need the [hey](https://github.com/rakyll/hey) tool.
 
-* Configuration
+Commands:
+```
+$ hey http://localhost:3000/notes_erb/index
 
-* Database creation
+$ hey http://localhost:3000/notes_haml/index
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ hey http://localhost:3000/notes_slim/index
+```
